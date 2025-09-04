@@ -1,0 +1,102 @@
+<html lang="en">
+    <head>
+        <style>
+            body
+            {
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+            }
+            .card
+            {
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 7%;         
+            width: 300px;
+            box-shadow: 0 15px 25px rgba(129, 124, 124, 0.5 );
+            height: 400px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 30px;
+            text-align: center;
+            }
+            
+             form
+            {
+                align-content: center;                              
+            }
+            input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            }
+            input[type=password], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            }
+
+            img
+            {
+                border-radius: 50%;
+                height:50px;
+                width:50px;
+                
+                
+            }
+            /* From https://css.glass */
+
+        </style>
+        <title>DK Book Store | Login..</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+	<body style="background-image: url(https://www.betterup.com/hubfs/leadership-books.png);">
+	
+
+
+         <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html"><i class="fa fa-home"></i>&ensp;My Website</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#"><i class="fa fa-sign-in"></i>&ensp;Login</a></li>
+      <li><a href="Register.html"><i class="fa fa-sign-in"></i>&ensp;Register</a></li>
+      <li><a href="LogoutServlet"><i class="fa fa-sign-out"></i>&ensp;Logout</a></li>
+      <li><a href="Profile"><i class="fa fa-user"></i>&ensp;Profile</a></li>
+    </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Cart"><i class="fa fa-shopping-cart">&ensp;</i>Cart</a></li>
+        <li><a href="#"><i class="fa fa-heart"></i>&ensp;Favourite</a></li>
+    </ul>
+  </div>
+</nav>
+    <div class="card">   
+    <form action="LoginServlet" method="Post">
+        <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar"><br><br>
+            <label for="uname">User Name:</label><br>
+            <input type="text" id="uname" name="uname"class="form-control" placeholder="Username" required=""><br>
+            <label for="pwd">Password:</label><br>
+            <input  type="password" id="pwd" name="pwd" class="form-control" placeholder="Password" required=""><br><br>
+            <button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 100px;">Login</button><br><br>
+            <p>Doesn't have an account yet, Register</p>
+            <a href="Register.html" style="color: purple"><b>Register</b></a>
+            
+        </form>
+    </div>
+    </body>
+</html>

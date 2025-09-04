@@ -1,0 +1,152 @@
+<html lang="en">
+    <head>
+        <style>
+            body
+            {
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+            }
+            .card
+            {
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 2%;         
+            width: 1000px;
+            box-shadow: 0 15px 25px rgba(129, 124, 124, 0.5 );
+            height: 660px;
+            border-radius: 20px;
+            backdrop-filter: blur(2px);
+            background-color: rgba(255, 255, 255, 0.3);
+            text-align: center;
+            margin-bottom: 10px;
+            }
+            
+             form
+            {
+                align-content: center;                 
+            }
+            input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            }
+            input[type=password], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            }
+
+            .img
+            {
+                border-radius: 50%;
+                height:50px;
+                width:50px;
+                margin-left: 45%;
+                               
+            }
+            .tit
+            {
+               margin-left: 10%; 
+            }
+            .im
+            {
+            width: 500px;
+            height: 660px;
+            border-bottom-left-radius: 3%;
+            border-top-left-radius: 3%;
+            }
+        </style>
+        <title>DK Book Store | Register..</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+	<body style="background-image: url(https://lifeism.co/uploads/_1000x524_crop_top-center_80_none/3410/Book-Quotes-1.webp);">
+
+        <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html"><i class="fa fa-home"></i>&ensp;My Website</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="Login.html"><i class="fa fa-sign-in"></i>&ensp;Login</a></li>
+      <li class="active"><a href="Register.html"><i class="fa fa-sign-in"></i>&ensp;Register</a></li>
+      <li><a href="LogoutServlet"><i class="fa fa-sign-out"></i>&ensp;Logout</a></li>
+      <li><a href="Profile"><i class="fa fa-user"></i>&ensp;Profile</a></li>
+    </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Cart"><i class="fa fa-shopping-cart">&ensp;</i>Cart</a></li>
+        <li><a href="#"><i class="fa fa-heart"></i>&ensp;Favourite</a></li>
+    </ul>
+  </div>
+</nav>        
+    <div class="card">   
+        <form action="RegisterServlet" method="Post">
+            <table>
+            <tr>
+                <td><img class= "im" src="https://mobimg.b-cdn.net/v3/fetch/77/77b54e73aa6e6aee334586f0a86f7760.jpeg"></td>
+                <td>&ensp;&ensp;&ensp;&ensp;</td>
+                <td><table class="t">
+                <tr>
+                            <h1 class="tit"><center>Please Register</center></h1>
+                            <img class="img" src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar"><br>
+                </tr>
+                 <tr>
+                  <td><label for="name"><b>Name</b></label></td>
+                  <td><input type="text" placeholder="Enter Name" name="name" required></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td><label for="uname"><b>User Name</b></label></td>
+                  <td><input type="text" placeholder="Enter UerName" name="uname" required></td>
+              </tr>
+              <tr>
+                  <td><label for="pwd"><b>Password</b></label></td>
+                  <td><input type="password" placeholder="Enter Password" name="pwd" required></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td><label for="rpwd"><b>Re-Enter Password&ensp;</b></label></td>
+                  <td><input type="password" placeholder="Re-Enter Password" name="rpwd" required></td>
+              </tr>
+              <tr>
+                <td rowspan="2"><p><b>Gender</b></p></td>
+                <td><input type="radio" id="gen" name="gen" value="male">
+                <label for="male">&ensp;Male</label><td>
+              </tr>
+              <tr>
+                <td><input type="radio" id="gen" name="gen" value="female">
+                <label for="female">Female</label></td>
+              </tr>
+              <tr>
+                <td><label for="phno"><b>Contact No.&ensp;</b></label></td>
+                <td><input type="text" placeholder="Enter your mobile No." name="phno" id="no" required></td>   
+              </tr>
+              <tr>
+                <td><label for="email"><b>E-Mail&ensp;</b></label></td>
+                <td><input type="text" placeholder="E-Mail Address" name="email" id="email" required></td>    
+              </tr>
+
+              <tr>
+                  <td colspan="2"><button style="margin-left:150px; margin-top: 19px;background-color:plum; border-color: orchid; border-width:2px; border-radius: 10px; height: 50px; width: 150px;font-size: 20px; ">Register</button></td>
+              </tr>
+
+                    </table></td>
+            </tr>
+             </table>
+        </form>  
+    </div></div>
+    </body>
+</html>

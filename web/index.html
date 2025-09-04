@@ -1,0 +1,537 @@
+<html lang="en">
+    <head>
+        <style>
+            
+            * {
+                box-sizing: border-box;
+              }
+            body
+            {
+                background-repeat: no-repeat;
+                background-size: cover;
+                font-family: Arial, Helvetica, sans-serif, times;
+                
+            }
+            .column {
+            float: left;
+            width: 25%;
+            padding: 0 10px;
+            }
+
+            .row {
+                
+                margin-top: 5px;
+                margin-bottom: 20px;
+                margin-left: 20px;
+                margin-right:20px;
+            }
+            
+            .row:after {
+             content: "";
+             display: table;
+             clear: both;
+            }
+            input[type=text] {
+            
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            float: left;
+            width: 88%;
+            
+            background: blanchedalmond;
+            border-bottom-left-radius:25px;
+            border-top-left-radius:25px;
+  
+            }
+
+            .search-container button {
+             
+             float: left;
+             width: 12%;
+             padding: 10.1px;
+             background-image: url(https://s26162.pcdn.co/wp-content/uploads/sites/2/2022/06/Best-Reviewed-Books-June-23.jpg);
+             background-size: 80px;
+             background-repeat: no-repeat;
+             color: white;
+             font-size: 24px;
+             border: 1px solid grey;
+             border-left: none;
+             border-bottom-right-radius:25px;
+             border-top-right-radius:25px;
+            }
+            .search-container button:hover {
+            background-image:url(https://media.istockphoto.com/id/949118068/photo/books.jpg?s=612x612&w=0&k=20&c=1vbRHaA_aOl9tLIy6P2UANqQ27KQ_gSF-BH0sUjQ730=) ;
+            }
+            .gal{
+                margin-left: 40px;
+                margin-right: 40px;
+                
+            }
+            img{
+                height:285px;
+                width:220px;
+            }
+            .news{width: 500px}
+            .news-scroll{
+            text-decoration: none;
+            font-family: times;
+            font-size:40px;
+            color:purple;
+            }
+            li{
+                list-style: none;
+            }
+
+       
+@media screen and (max-width: 1000px) {
+  .search-container {
+    float: none;
+  }
+  .input[type=text], .topnav .search-container button {
+    
+    padding: 14px;
+  }
+  .input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.card {
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.5 );
+  padding: 1px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+            /* From https://css.glass */
+
+        </style>
+        <title>DK BookStore | Home..</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+	<body style="background-color:skyblue;">
+	
+
+
+         <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a style="color:white; "class="navbar-brand" href="index.html"><i class="fa fa-home"></i>&ensp;My Website</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="Login.html"><i class="fa fa-sign-in"></i>&ensp;Login</a></li>
+      <li><a href="Register.html"><i class="fa fa-sign-in"></i>&ensp;Register</a></li>
+      <li><a href="LogoutServlet"><i class="fa fa-sign-out"></i>&ensp;Logout</a></li>
+      <li><a href="Profile"><i class="fa fa-user"></i>&ensp;Profile</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="Cart"><i class="fa fa-shopping-cart">&ensp;</i>Cart</a></li>
+        <li><a href="#"><i class="fa fa-heart"></i>&ensp;Favourite</a></li>
+    </ul>
+  </div>
+</nav>
+   <div class="gal">
+      <marquee style="margin-top:10%;" class="news-scroll" behavior="alternate" loop="1" direction="right" width="79%" scrollamount="7"  onmouseover="this.stop();" onmouseout="this.start();"> 
+                       <i class="fa fa-book"></i> A Book is a gift you can open again and again.<i class="fa fa-book"></i>
+      </marquee>
+    <div class="row">
+        <div class="search-container">
+            <center><form action="Search" method="Post" style="max-width:600px">
+                         
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="&ensp;Search everything you want..." name="search" >
+            <button><i class="fa fa-search"></i></button>
+            </form></center>
+        </div>
+    </div>
+            <p><br></p> 
+        <div id="myUL" class="cls">
+        <div  style="font-family:times;" class="row">
+            <li><div class="column">
+                <div class="card">
+                    <h3 href="#">THE ALCHEMIST</h3>
+                    <p><img class= "im" src="https://jameskennedymonash.files.wordpress.com/2013/06/the-alchemist-paulo-coelho.jpg"></p>
+                    <h4>A Philosophy and Inspiring Book</h4>
+                    <h3>Price : 125 Rs</h3>
+                    <center><table>
+                        <tr>
+                            <td><form action="1.html"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 100px;">Details</button></form></td>
+                            <td>&ensp;</td>
+                            <td><form action="Servlet1"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px; color: purple;">
+                                        <i class="fa fa-shopping-cart"></i></button></form></td>
+                            <td>&ensp;</td>
+                            <td><button id="heart" style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px; ">
+                                    <i class="fa fa-heart"></i></button><br><br></td>
+                        </tr>
+                    </table></center>
+                </div>
+            </div></li>
+
+        <li><div class="column ">
+            <div class="card">
+                <h3 href="#">HARRY POTTER</h3>
+                <p><img class= "im" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546910265l/2.jpg"></p>
+                <h4>A Fantasy and Adventure Story Book</h4>
+                <h3>Price : 248 Rs</h3>
+                <center><table>
+                        <tr>
+                            <td><form action="2.html"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 100px;">Details</button></form></td>
+                            <td>&ensp;</td>
+                            <td><form action="Servlet2"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px; color: purple;">
+                                    <i class="fa fa-shopping-cart"></i></button></form></td>
+                            <td>&ensp;</td>
+                            <td><button id="a" style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px; ">
+                                    <i class="fa fa-heart"></i></button><br><br></td>
+                        </tr>
+                </table></center>
+            </div>
+        </div></li>
+  
+        <li><div class="column">
+            <div class="card">
+                <h3 href="#">CINDERELLA</h3>
+                <p><img class= "im" src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51b-1qrMO4L.jpg"></p>
+                <h4>A Fairy tale Story Book</h4>
+                <h3>Price : 316 Rs</h3>
+                <center><table>
+                        <tr>
+                            <td><form action="3.html"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 100px;">Details</button></form></td>
+                            <td>&ensp;</td>
+                            <td><form action="Servlet3"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px; color: purple;">
+                                    <i class="fa fa-shopping-cart"></i></button></form></td>
+                            <td>&ensp;</td>
+                            <td><button id="b" style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px; ">
+                                    <i class="fa fa-heart"></i></button><br><br></td>
+                        </tr>
+                </table></center>
+            </div>
+        </div></li>
+  
+        <li><div class="column">
+            <div class="card">
+                <h3 href="#">SNOW WHITE</h3>
+                <p><img class= "im" src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/817B3j3vPyL.jpg"></p>
+                <h4>A Fairy tale and Fantasy Story Book</h4>
+                <h3>Price : 429 Rs</h3>
+                <center><table>
+                        <tr>
+                            <td><form action="4.html"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 100px;">Details</button></form></td>
+                            <td>&ensp;</td>
+                            <td><form action="Servlet4"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px; color: purple;">
+                                    <i class="fa fa-shopping-cart"></i></button></form></td>
+                            <td>&ensp;</td>
+                            <td><button id="c" style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px; ">
+                                    <i class="fa fa-heart"></i></button><br><br></td>
+                        </tr>
+                </table></center>
+            </div>
+        </div></li>
+    </div>
+        <div  style="font-family:times;" class="row">
+            <li><div class="column">
+                <div class="card">
+                    <h3 href="#">THE GOD OF SMALL THINGS</h3>
+                    <p><img class= "im" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDVX4-FzKeKk5dhUpDFIMcQWV7BTUf5kH3Wvas2rtViEBWScyyAN1vqGA6ieE6s42sx6A&usqp=CAU"></p>
+                    <h4>A Domestic Fiction Novel</h4>
+                    <h3>Price : 229 Rs</h3>
+                    <center><table>
+                        <tr>
+                            <td><form action="5.html"><button  style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 100px;">Details</button></form></td>
+                            <td>&ensp;</td>
+                            <td><form action="Servlet5"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px; color: purple;">
+                                    <i class="fa fa-shopping-cart"></i></button></form></td>
+                            <td>&ensp;</td>
+                            <td><button id="d" style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px; ">
+                                    <i class="fa fa-heart"></i></button><br><br></td>
+                        </tr>
+                </table></center>
+                </div>
+            </div></li>
+
+        <li><div class="column ">
+            <div class="card">
+                <h3 href="#">JANE AUSTEN</h3>
+                <p><img class= "im" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1510238593i/34220829.jpg"></p>
+                <h4>Comedy Country House Novel</h4>
+                <h3>Price : 159 Rs</h3>
+                <center><table>
+                        <tr>
+                            <td><form action="6.html"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 100px;">Details</button></form></td>
+                            <td>&ensp;</td>
+                            <td><form action="Servlet6"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px; color: purple;">
+                                    <i class="fa fa-shopping-cart"></i></button></form></td>
+                            <td>&ensp;</td>
+                            <td><button id="e" style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px;">
+                                    <i class="fa fa-heart"></i></button><br><br></td>
+                        </tr>
+                </table></center>
+            </div>
+        </div></li>
+  
+        <li><div class="column">
+            <div class="card">
+                <h3 href="#">The ONE YOU CANNOT HAVE</h3>
+                <p><img class= "im" src="https://www.bookgeeks.in/wp-content/uploads/2017/04/the-one-you-cannot-have.jpg"></p>
+                <h4>Fiction and Romantic Novel</h4>
+                <h3>Price : 189 Rs</h3>
+                <center><table>
+                        <tr>
+                            <td><form action="7.html"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 100px;">Details</button></form></td>
+                            <td>&ensp;</td>
+                            <td><form action="Servlet7"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px; color: purple;">
+                                    <i class="fa fa-shopping-cart"></i></button></form></td>
+                            <td>&ensp;</td>
+                            <td><button id="f" style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px;">
+                                    <i class="fa fa-heart"></i></button><br><br></td>
+                        </tr>
+                </table></center>
+            </div>
+        </div></li>
+  
+        <li><div class="column">
+            <div class="card">
+                <h3 href="#">A STORY OF STRUGGLE</h3>
+                <p><img class= "im" src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51adHuE6AqL.jpg"></p>
+                <h4>An Inspiring Story Book</h4>
+                <h3>Price : 105 Rs</h3>
+                <center><table>
+                        <tr>
+                            <td><form action="8.html"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 100px;">Details</button></form></td>
+                            <td>&ensp;</td>
+                            <td><form action="Servlet8"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px; color: purple;">
+                                    <i class="fa fa-shopping-cart"></i></button></form></td>
+                            <td>&ensp;</td>
+                            <td><button id="g" style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px;">
+                                    <i class="fa fa-heart"></i></button><br><br></td>
+                        </tr>
+                </table></center>
+            </div>
+        </div></li>
+    </div>
+       <div  style="font-family:times;" class="row">
+            <li><div class="column">
+                <div class="card">
+                    <h3 href="#">The Complete Works of SWAMI VIVEKANANDA</h3>
+                    <p><img class= "im" src="https://www.bookgeeks.in/wp-content/uploads/2018/01/The-Complete-Works-of-Swami-Vivekananda.jpg"></p>
+                    <h4>An exhaustive collection of Swami Vivekananda's speeches</h4>
+                    <h3>Price : 150 Rs</h3>
+                    <center><table>
+                        <tr>
+                            <td><form action="9.html"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 100px;">Details</button></form></td>
+                            <td>&ensp;</td>
+                            <td><form action="Servlet9"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px; color: purple;">
+                                    <i class="fa fa-shopping-cart"></i></button></form></td>
+                            <td>&ensp;</td>
+                            <td><button id="h" style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px;">
+                                    <i class="fa fa-heart"></i></button><br><br></td>
+                        </tr>
+                </table></center>
+                </div>
+            </div></li>
+
+        <li><div class="column ">
+            <div class="card">
+                <h3 href="#">SWAMI VIVEKANANDA'S WINNING FORMULAS</h3>
+                <p><img class= "im" src="https://cdn.dollsofindia.com/images/p/hindu-books/hindu-philosophy-UI17_l.jpg"></p>
+                <h4>An Inspirational Book</h4>
+                <h3>Price : 199 Rs</h3>
+                <center><table>
+                        <tr>
+                            <td><form action="10.html"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 100px;">Details</button></form></td>
+                            <td>&ensp;</td>
+                            <td><form action="Servlet10"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px; color: purple;">
+                                    <i class="fa fa-shopping-cart"></i></button></form></td>
+                            <td>&ensp;</td>
+                            <td><button id="i" style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px;">
+                                    <i class="fa fa-heart"></i></button><br><br></td>
+                        </tr>
+                </table></center>
+            </div>
+        </div></li>
+  
+        <li><div class="column">
+            <div class="card">
+                <h3 href="#">WINGS OF FIRE</h3>
+                <p><img class= "im" src="https://rukminim1.flixcart.com/image/416/416/kjkbv680-0/book/p/r/m/wings-of-fire-original-imafz3pawzphkecj.jpeg?q=70"></p>
+                <h4>An Autobiography of A.P. J Abdul Kalam </h4>
+                <h3>Price : 199 Rs</h3>
+                <center><table>
+                        <tr>
+                            <td><form action="11.html"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 100px;">Details</button></form></td>
+                            <td>&ensp;</td>
+                            <td><form action="Servlet11"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px; color: purple;">
+                                    <i class="fa fa-shopping-cart"></i></button></form></td>
+                            <td>&ensp;</td>
+                            <td><button id="j" style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px;">
+                                    <i class="fa fa-heart"></i></button><br><br></td>
+                        </tr>
+                </table></center>
+            </div>
+        </div></li>
+  
+           <li><div class="column">
+            <div class="card">
+                <h3 href="#">DON'T GIVE UP</h3>
+                <p><img class= "im" src="https://images-na.ssl-images-amazon.com/images/I/514UPRCTj8L.jpg"></p>
+                <h4>An Inspirational Book </h4>
+                <h3>Price : 249 Rs</h3>
+                <center><table>
+                        <tr>
+                            <td><form action="12.html"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 100px;">Details</button></form></td>
+                            <td>&ensp;</td>
+                            <td><form action="Servlet12"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px; color: purple;">
+                                    <i class="fa fa-shopping-cart"></i></button></form></td>
+                            <td>&ensp;</td>
+                            <td><button id="k" style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 40px; width: 40px;">
+                                    <i class="fa fa-heart"></i></button><br><br></td>
+                        </tr>
+                </table></center>
+            </div>
+            </div></li>
+    </div>
+    </div>        
+    
+    
+   </div>
+    <script>
+       const heart = document.getElementById('heart');
+
+heart.addEventListener('click', function onClick() {
+  heart.style.backgroundColor = 'plum';
+  heart.style.color = 'red';
+});
+ 
+    </script>
+    <script>
+       const a = document.getElementById('a');
+
+a.addEventListener('click', function onClick() {
+  a.style.backgroundColor = 'plum';
+  a.style.color = 'red';
+});
+ 
+    </script>
+    <script>
+       const b = document.getElementById('b');
+
+b.addEventListener('click', function onClick() {
+  b.style.backgroundColor = 'plum';
+  b.style.color = 'red';
+});
+ 
+    </script>
+    <script>
+       const c = document.getElementById('c');
+
+c.addEventListener('click', function onClick() {
+  c.style.backgroundColor = 'plum';
+  c.style.color = 'red';
+});
+ 
+    </script>
+    <script>
+       const d = document.getElementById('d');
+
+d.addEventListener('click', function onClick() {
+  d.style.backgroundColor = 'plum';
+  d.style.color = 'red';
+});
+ 
+    </script>
+    <script>
+       const e = document.getElementById('e');
+
+e.addEventListener('click', function onClick() {
+  e.style.backgroundColor = 'plum';
+  e.style.color = 'red';
+});
+ 
+    </script>
+    <script>
+       const f = document.getElementById('f');
+
+f.addEventListener('click', function onClick() {
+  f.style.backgroundColor = 'plum';
+  f.style.color = 'red';
+});
+ 
+    </script>
+    <script>
+       const g = document.getElementById('g');
+
+g.addEventListener('click', function onClick() {
+  g.style.backgroundColor = 'plum';
+  g.style.color = 'red';
+});
+ 
+    </script>
+    <script>
+       const h = document.getElementById('h');
+
+h.addEventListener('click', function onClick() {
+  h.style.backgroundColor = 'plum';
+  h.style.color = 'red';
+});
+ 
+    </script>
+    <script>
+       const i = document.getElementById('i');
+
+i.addEventListener('click', function onClick() {
+  i.style.backgroundColor = 'plum';
+  i.style.color = 'red';
+});
+ 
+    </script>
+    <script>
+       const j = document.getElementById('j');
+
+j.addEventListener('click', function onClick() {
+  j.style.backgroundColor = 'plum';
+  j.style.color = 'red';
+});
+ 
+    </script><script>
+       const k = document.getElementById('k');
+
+k.addEventListener('click', function onClick() {
+  k.style.backgroundColor = 'plum';
+  k.style.color = 'red';
+});
+ 
+    </script>
+   <script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("h3")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+    
+    </body>
+    
+        
+</html>

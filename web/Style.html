@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 30px;
+  margin-left:25%;
+  margin-right:100px;
+  margin-top:10px;
+  margin-bottom:10px;
+  border-radius:10px;
+  
+}
+
+.row:after {
+  content: "";
+  display: table;
+}
+
+@media screen and (max-width: 900px) {
+  .column  {
+    width: 60%;
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column  {
+    width: 80%;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+  @media screen and (max-width: 400px) {
+  .column  {
+    width: 70%;
+    margin-left: 60px;
+    margin-right:60px;
+  }
+}
+
+        </style>
+    </head>
+    </html>

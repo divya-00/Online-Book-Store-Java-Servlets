@@ -1,0 +1,127 @@
+<html lang="en">
+    <head>
+        <style>
+            body
+            {
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+            }
+            .card
+            {
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 2%;         
+            width: 900px;
+            box-shadow: 0 15px 25px rgba(129, 124, 124, 0.5 );
+            height: 600px;
+            border-radius: 20px;
+            backdrop-filter: blur(2px);
+            background-color: rgba(255, 255, 255, 0.3);
+            text-align: center;
+            margin-bottom: 10px;
+            padding-right: 40px;
+            }
+            
+             form
+            {
+                align-content: center;                 
+            }
+           
+            .tit
+            {
+               margin-left: 15%;
+               font-family: times;
+               font-size: 45px;
+                    
+            }
+            p{
+                color: white;
+                font-family: times;
+                text-align: justify;
+                font-size:20px;
+            }
+            .des{
+                font-size:30px;
+                color: white;
+                font-family: times;
+            }
+            .im
+            {
+            width: 450px;
+            height: 600px;
+            border-bottom-left-radius: 3%;
+            border-top-left-radius: 3%;
+            }
+        </style>
+        <title>DK Store | The God of Small Things..</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+	<body style="background-image: url(https://d1e00ek4ebabms.cloudfront.net/production/c355b933-c751-4a24-85b8-b5371f181383.jpg);">
+
+        <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html"><i class="fa fa-home"></i>&ensp;My Website</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="Login.html"><i class="fa fa-sign-in"></i>&ensp;Login</a></li>
+      <li><a href="Register.html"><i class="fa fa-sign-in"></i>&ensp;Register</a></li>
+      <li><a href="LogoutServlet"><i class="fa fa-sign-out"></i>&ensp;Logout</a></li>
+      <li><a href="Profile.html"><i class="fa fa-user"></i>&ensp;Profile</a></li>
+    </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Cart"><i class="fa fa-shopping-cart">&ensp;</i>Cart</a></li>
+        <li><a href="#"><i class="fa fa-heart"></i>&ensp;Favourite</a></li>
+    </ul>
+  </div>
+</nav>        
+    <div class="card">   
+            <table>
+            <tr>
+                <td><img class= "im" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDVX4-FzKeKk5dhUpDFIMcQWV7BTUf5kH3Wvas2rtViEBWScyyAN1vqGA6ieE6s42sx6A&usqp=CAU"></td>
+                <td>&ensp;&ensp;&ensp;&ensp;</td>
+                <td><table class="t">
+                    <tr>
+                    <h1 class="tit">Details of Book</h1>
+                    <div class="des"><h3>Author :&ensp; Arundhati Roy</h3>
+                        <h3>Price :&ensp; 229</h3>
+                        <h3>Description</h3>
+                    </div>
+                    <p>"The God of Small Things" is a novel by Indian author Arundhati Roy, 
+                        first published in 1997. The book tells the story of a family in the
+                        southern Indian state of Kerala and the tragic events that befall them.
+                        The story is narrated from the perspective of two young twins, Estha and Rahel, 
+                        and switches back and forth between different time periods. The novel explores 
+                        themes such as love, loss, family, caste, politics, and social injustice.
+                        "The God of Small Things" is known for its poetic language and smells of Kerala.</p>
+                    </tr>
+                    <tr>
+                    <td><form action="Servlet5"><button style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 50px; width: 150px; color: purple;">
+                                    <i class="fa fa-shopping-cart">&ensp;Add to Cart</i></button></form><br><br></td>
+                    <td>&ensp;&ensp;</td>
+                    <td><form action="#"><button id="heart" style="background-color: plum; border-color: orchid; border-width:2px; border-radius: 5px; height: 50px; width: 120px; ">
+                                <i class="fa fa-heart">&ensp; Favourite </i></button></form><br><br></td>
+                    </tr>
+                
+
+                </table></td>
+            </tr>
+            </table>
+    </div>
+             <script>
+       const heart = document.getElementById('heart');
+
+heart.addEventListener('click', function onClick() {
+  heart.style.backgroundColor = 'plum';
+  heart.style.color = 'red';
+});
+ 
+    </script>
+    </body>
+</html>
