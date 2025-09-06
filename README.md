@@ -1,4 +1,4 @@
-# Online Book Store
+# Online Book Store Java
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
